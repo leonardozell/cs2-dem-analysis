@@ -1,0 +1,74 @@
+📌 Objetivos do Projeto
+
+Converter arquivos .dem em dados estruturados
+
+Normalizar coordenadas espaciais do mapa
+
+Gerar heatmaps de movimentação
+
+Detectar padrões táticos via clusterização
+
+Criar features agregadas por round
+
+Estruturar pipeline para modelos preditivos
+
+
+
+🧠 Arquitetura do Projeto
+Projeto CS2/
+│
+├── main.py
+├── src/
+│   ├── parser.py
+│   ├── features.py
+│   ├── tactics.py
+│   ├── heatmaps.py
+│
+└── data/
+
+
+🔍 Componentes
+1️⃣ Parsing de Demo
+
+Responsável por:
+
+Extração de ticks
+
+Eventos de kill
+
+Posições (x, y, z)
+
+Identificação de jogadores e times
+
+Saída principal:
+
+DataFrame de ticks
+
+DataFrame de kills
+
+2️⃣ Normalização Espacial
+
+As coordenadas são convertidas para intervalo [0,1]:
+
+x_norm
+y_norm
+
+Isso permite:
+
+Comparação entre mapas
+
+Construção de heatmaps
+
+Clusterização consistente
+
+
+
+🚀 Próximos Passos
+
+Classificação automática de estilo tático
+
+Detecção de executes vs defaults
+
+Identificação de padrões repetidos
+
+Sistema de scouting automatizado
