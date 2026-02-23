@@ -1,10 +1,10 @@
 📌 Objetivos do Projeto
 
-Converter arquivos .dem em dados estruturados
+✔Converter arquivos .dem em dados estruturados
 
-Normalizar coordenadas espaciais do mapa
+✔Normalizar coordenadas espaciais do mapa
 
-Gerar heatmaps de movimentação
+✔Gerar heatmaps de movimentação
 
 Detectar padrões táticos via clusterização
 
@@ -19,47 +19,50 @@ Projeto CS2/
 │
 ├── main.py
 ├── src/
-│   ├── parser.py
+│   ├── parse.py
 │   ├── features.py
 │   ├── tactics.py
 │   ├── heatmaps.py
+│   ├── model.py
+│   ├── spatial.py
+│   ├── maps.py
 │
 └── data/
+├── .gitgnore
+├── readme
 
 
-🔍 Componentes
-1️⃣ Parsing de Demo
+🛠 Tecnologias Utilizadas
 
-Responsável por:
+Python
 
-Extração de ticks
+Pandas
 
-Eventos de kill
+NumPy
 
-Posições (x, y, z)
+SciPy
 
-Identificação de jogadores e times
+Scikit-Learn
 
-Saída principal:
+Matplotlib
 
-DataFrame de ticks
+Seaborn
 
-DataFrame de kills
 
-2️⃣ Normalização Espacial
+💡 Possíveis Aplicações
 
-As coordenadas são convertidas para intervalo [0,1]:
+Análise profissional de times
 
-x_norm
-y_norm
+Ferramenta de coaching
 
-Isso permite:
+Scouting de adversários
 
-Comparação entre mapas
+Estudos de comportamento coletivo
 
-Construção de heatmaps
+Pesquisa em visão computacional aplicada a jogos
 
-Clusterização consistente
+
+
 
 
 
@@ -72,3 +75,8 @@ Detecção de executes vs defaults
 Identificação de padrões repetidos
 
 Sistema de scouting automatizado
+
+
+👤 Autor
+
+Leonardo Zell
